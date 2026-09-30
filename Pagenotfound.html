@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss">
+        @layer components {
+      .container {
+        @apply w-full mx-auto px-4  sm:px-10 md:px-20 lg:px-40;
+        /* @apply flex justify-center items-center flex-wrap mx-auto w-[600px]; */
+
+      }
+      
+    }
+  </style>
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen">
+    <div class="flex flex-col items-center">
+        <img class="w-60 md:w-62 lg:w-68 justify-center" src="assets/PNF.png" alt="page not found">
+        <h1 class="text-2xl md:text-3xl text-[#B6349A] font-bold">Page not found</h1>
+        <p class="mt-5 text-center text-[13px] md:text-[16px] px-14 md:px-0">
+            The page you'r looking for isn't available. Try to search <br> again or use the go back butten below.
+        </p>
+        <button class="mt-5 border rounded w-75 h-9  md:w-98 text-xs bg-[#B6349A] border-[#B6349A] text-white">
+            Start for free
+        </button>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss">
+        @layer components {
+      .container {
+        @apply w-full mx-auto px-4  sm:px-10 md:px-20 lg:px-40;
+        /* @apply flex justify-center items-center flex-wrap mx-auto w-[600px]; */
+
+      }
+      
+    }
+  </style>
+</head>
+<body>
+    <header class="border-b-1 border-b-[#F0EEF0] flex justify-center py-6 ">
+        <div >
+            <img src="../assets/logo.png" alt="" class="">
+        </div>
+    </header>
+    
+ <div class="container  w-200">
+
+ <form action="submit" class="border border-[#FCFCFC]">
+    <h1 class="font-semibold text-[20px] " >Login</h1>
+    <div class="border rounded-md border-[#FCFCFC] mt-6 bg-[#FCFCFC]">
+    <div class="flex flex-row py-4 px-3 gap-4">
+<button class="flex flex-row  border border-[#F8F7F8] rounded-xl w-[130px] h-[40px] text-black py-2 justify-center gap-2">
+    <img src="../assets/Email.png" alt="" class="w-4 h-4 mt-1">
+    <span>Email</span>
+</button>
+<button class="flex flex-row  border border-[#F8F7F8] rounded-xl w-[130px] h-[40px] text-black py-2 justify-center gap-2">
+    <img src="../assets/phone.png" alt="" class="w-4 h-4 mt-1">
+    <span>Phone</span>
+</button>
+</div>
+<div class="mx-auto py-4 px-4">
+    <label for="Email">Email</label> <br>
+    <input type="text" placeholder="Enter your email" class="border bg-white border-[#FCFCFC] w-[400px] py-2 text-[#9D9FA1] rounded-md">
+    
+</div>
+<button
+      class="mx-auto flex align items:center gap-1 bg-[#B6349A] mt-2 md:mt-2 hover:bg-[#a52d8c] text-white text-[9px] sm:text-[10px] md:text-[20px] rounded-full px-30  py-2 md:px-40 md:py-2 icon-button "> 
+     <span> Continue</span>  <img src="../assets/arrow-right.svg" alt="" class="w-[14px]">
+     
+    </button>
+</div>
+    </form>
+    </div>
+</body>

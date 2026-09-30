@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 1</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .container {
+        @apply w-full max-w-[1000px] mx-auto px-5 sm:px-8 md:px-12;
+      }
+
+      .meal-card {
+        @apply aspect-square rounded-xl bg-[#f5f5f5] flex flex-col items-center justify-center gap-2;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <main class="container min-h-screen flex flex-col pt-8 md:pt-10 pb-8">
+<div class="border border-[#F0EEF0] rounded-full w-[25px] mb-4">
+  <img src="../assets/arrow-left.svg" alt="">
+</div>
+    <div class="w-full h-[5px] bg-gray-100 rounded-full overflow-hidden">
+      <div class="w-[20%] md:w-[35%] h-full bg-[#B6349A] rounded-full"></div>
+    </div>
+
+    <section class="flex  items-center justify-between">
+
+      <div class="w-full md:w-[65%]">
+
+        <h1 class="text-[22px] sm:text-[23px] md:text-[24px] font-semibold text-black mb-2 mt-4 md:mb-3 mt-5">
+          What kind of meals do you prefer?
+        </h1>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 max-w-[360px]" x-data="{ meals: [
+    { id: 1, image: '../assets/mushroom.png', title: 'Mushroom' },
+    { id: 2, image: '../assets/fish.png', title: 'Fish' },
+    { id: 3, image: '../assets/ham.png', title: 'Ham' },
+    { id: 4, image: '../assets/meat.png', title: 'Meat' },
+    { id: 5, image: '../assets/spag.png', title: 'Spagehtti' },
+    { id: 6, image: '../assets/shrim.png', title: 'Shrimp' },
+    { id: 7, image: '../assets/pizza.png', title: 'Pizza' },
+    { id: 8, image: '../assets/chiken.png', title: 'Chiken' },
+], isSelected: false, selectedMeals: [],
+
+    // Add multiple items at once using the spread operator (...)
+    addItem(item) {
+        this.selectedMeals.push(item);
+    },
+
+    // Remove multiple items at once using filter()
+    removeItem(item) {
+        this.selectedMeals = this.selectedMeals.filter(i => i !== item);
+    }
+
+}">
+
+          <template x-for="meal in meals" :key="meal.id">
+
+            <div class="meal-card" :class="{'bg-[#FEF5FD] border border-[#B6349A]': selectedMeals.includes(meal.id)}" @click="selectedMeals.includes(meal.id) ? removeItem(meal.id) :addItem(meal.id) " >
+              <img :src="meal.image" alt="Mushroom" class="w-9 h-9 object-contain">
+              <p class="text-[7px] sm:text-[8px] text-[#0D280B] font-semibold" x-text="meal.title">
+
+              </p>
+            </div>
+          </template>
+
+
+        </div>
+      </div>
+
+      <div class="hidden md:grid w-[30%] grid-cols-2 gap-3 mt-10">
+
+        <img src="../assets/Group4.png" alt="Salad" class="w-full">
+
+        <img src="../assets/Group2.png" alt="Salad" class="w-full">
+
+        <img src="../assets/Group2.png" alt="Salad" class="w-full">
+
+        <img src="../assets/Group.png" alt="Salad" class="w-full">
+
+      </div>
+
+    </section>
+
+   <a href="Q2.html">
+     <button
+      class=" flex align items:center gap-1 bg-[#B6349A] mt-10 md:mt-25 hover:bg-[#a52d8c] text-white text-[9px] sm:text-[10px] rounded-full px-30  py-2 md:px-10 icon-button "> 
+     <span> Continue</span>  <img src="../assets/arrow-right.svg" alt="" class="w-[14px]">
+     
+    </button>
+   </a>
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style type="text/tailwindcss">
+        @layer components {
+      .container {
+        @apply w-full max-w-[1000px] mx-auto px-5 sm:px-8 md:px-12;
+      }
+
+      .meal-card {
+        @apply aspect-square rounded-xl bg-[#f5f5f5] flex flex-col items-center justify-center gap-2;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+    <main class="container min-h-screen flex flex-col pt-8 md:pt-10 pb-8">
+
+        <div class="w-full h-[8px] md:h-[18px] bg-gray-100 rounded-full overflow-hidden mt-4 md:mt-15">
+            <div class="w-[20%] md:w-[35%] h-full bg-[#B6349A] rounded-full"></div>
+        </div>
+
+        <section class="flex  mt-2 md:mt-10 ">
+
+            <div class="w-full md:w-[55%]">
+
+                <h1 class="text-[22px] sm:text-[23px] md:text-[34px] font-semibold text-black md:mb-12">
+                    What are your goals with Easymart
+                </h1>
+                <div class="mt-4 flex flex-wrap gap-4 text-[13px] md:text-[22px] items-center">
+                    <button class="order-1 border border-[#F8F8F8] bg-[#F8F8F8]  rounded-full px-[20px] py-[6px]">
+                        Save time on shopping
+                    </button>
+
+                    <button class="order-2 border border-[#F8F8F8] bg-[#F8F8F8]  rounded-full px-[10px] py-[6px]">
+                        Eat healthier
+                    </button>
+
+                    <button class="order-3 border border-[#F8F8F8] bg-[#F8F8F8]  rounded-full px-[10px] py-[6px]">
+                        Try new recipies
+                    </button>
+
+                    <button class="order-4 border border-[#F8F8F8] bg-[#F8F8F8] rounded-full px-[15px] py-[6px]">
+                        Save money
+                    </button>
+
+                    <button class="order-5 border border-[#F8F8F8] bg-[#F8F8F8] rounded-full px-[8px] py-[6px]">
+                        Simplify meal planning
+                    </button>
+
+                    <button class="order-6 border border-[#F8F8F8] bg-[#F8F8F8] rounded-full px-[12px] py-[6px]">
+                        Reduce food waste
+                    </button>
+                </div>
+            </div>
+            <div class="hidden md:block w-[45%] gap-1 mt-10">
+
+                <img src="../assets/shopping1.png" alt="Shopping " class="w-full ">
+
+            </div>
+
+        </section>
+
+        <a href="Q2.html">
+            <button
+                class="self-start bg-[#B6349A] mt-35 md:mt-25 hover:bg-[#a52d8c] text-white text-[9px] md:text-[15px] rounded-full px-30  py-2 md:px-10 py-3">
+                Continue
+            </button>
+        </a>
+
+    </main>
+
+</body>
+
+</html>
