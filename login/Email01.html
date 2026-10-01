@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <style type="text/tailwindcss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <style type="text/tailwindcss">
         @layer components {
       .container {
         @apply w-full mx-auto px-4  sm:px-10 md:px-20 lg:px-40;
@@ -16,39 +16,54 @@
     }
   </style>
 </head>
-<body>
-    <header class="border-b-1 border-b-[#F0EEF0] flex justify-center py-6 ">
-        <div >
-            <img src="../assets/logo.png" alt="" class="">
-        </div>
-    </header>
-    
- <div class="container  w-200">
 
- <form action="submit" class="border border-[#FCFCFC]">
-    <h1 class="font-semibold text-[20px] " >Login</h1>
-    <div class="border rounded-md border-[#FCFCFC] mt-6 bg-[#FCFCFC]">
-    <div class="flex flex-row py-4 px-3 gap-4">
-<button class="flex flex-row  border border-[#F8F7F8] rounded-xl w-[130px] h-[40px] text-black py-2 justify-center gap-2">
-    <img src="../assets/Email.png" alt="" class="w-4 h-4 mt-1">
+<body class="text-black text-[7px]container ">
+
+<header class="border-b  border-b-[#F0EEF0] flex py-5 px-2 md:py-8 justify-center ">
+        <img src="../assets/logo.png" alt="" class="h-6 md:h-7 w-auto">
+    </header>
+
+<main class="w-[92%] w-[320px] mx-auto">
+
+  <h1 class="font-semibold text-[20px]  mt-2 mb-4">Login</h1>
+
+  <form class="bg-[#fcfcfc] rounded-xl p-2">
+
+    <div class="flex gap-2 mb-3">
+      <button class="flex flex-row  border border-[#F8F7F8] bg-[#F8F7F8]  rounded-md w-[100px] h-[40px] text-[10px] text-black py-2 justify-center gap-2">
+    <img src="../assets/Email.png" alt="" class="w-4 h-4">
     <span>Email</span>
 </button>
-<button class="flex flex-row  border border-[#F8F7F8] rounded-xl w-[130px] h-[40px] text-black py-2 justify-center gap-2">
-    <img src="../assets/phone.png" alt="" class="w-4 h-4 mt-1">
-    <span>Phone</span>
-</button>
-</div>
-<div class="mx-auto py-4 px-4">
-    <label for="Email">Email</label> <br>
-    <input type="text" placeholder="Enter your email" class="border bg-white border-[#FCFCFC] w-[400px] py-2 text-[#9D9FA1] rounded-md">
-    
-</div>
-<button
-      class="mx-auto flex align items:center gap-1 bg-[#B6349A] mt-2 md:mt-2 hover:bg-[#a52d8c] text-white text-[9px] sm:text-[10px] md:text-[20px] rounded-full px-30  py-2 md:px-40 md:py-2 icon-button "> 
-     <span> Continue</span>  <img src="../assets/arrow-right.svg" alt="" class="w-[14px]">
-     
-    </button>
-</div>
-    </form>
+
+      <button class="flex h-5 rounded-md bg-[#F8F7F8] w-[90px] h-[40px] text-[10px] text-black py-2  flex justify-center items-center gap-2">
+        <img src="../assets/phone.png" class="w-3 h-3"> Phone
+      </button>
     </div>
+
+    <label class="text-[12px]">Email</label>
+    <input type="email" placeholder="Enter your email"
+      class="w-full h-7 mt-1 px-2 bg-white rounded border border-[#f5f5f5] text-[12px]">
+
+    <button type="submit"
+      class="w-full h-7 mt-3 rounded-full bg-[#b6349a] text-white flex  text-[9px] justify-center items-center gap-1">
+      Continue <img src="../assets/arrow-right.svg" class="w-2.5">
+    </button>
+
+  </form>
+
+  <div class="flex items-center gap-2 my-4  text-[10px] text-[#999]">
+    <span class="h-px bg-[#eee] flex-1"></span>or<span class="h-px bg-[#eee] flex-1"></span>
+  </div>
+
+  <button class="w-full h-7 mb-2 rounded-full  text-[10px]  bg-[#f8f7f8] text-[#b6349a] flex justify-center items-center gap-1">
+    <img src="../assets/meta.png" class="w-3"> Sign in with Meta
+  </button>
+
+  <button class="w-full h-7 rounded-full text-[10px] bg-[#f8f7f8] flex justify-center items-center gap-1">
+    <img src="../assets/google.png" class="w-3"> Sign in with Google
+  </button>
+
+</main>
+
 </body>
+</html>
