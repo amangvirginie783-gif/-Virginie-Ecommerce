@@ -67,7 +67,6 @@
             <div class="meal-card" :class="{'bg-[#FEF5FD] border border-[#B6349A]': selectedMeals.includes(meal.id)}" @click="selectedMeals.includes(meal.id) ? removeItem(meal.id) :addItem(meal.id) " >
               <img :src="meal.image" alt="Mushroom" class="w-9 h-9 object-contain">
               <p class="text-[7px] sm:text-[8px] text-[#0D280B] font-semibold" x-text="meal.title">
-
               </p>
             </div>
           </template>

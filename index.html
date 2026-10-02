@@ -1,34 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <style type="text/tailwindcss">
-        @layer components {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @layer components {
       .container {
-        @apply w-full mx-auto px-4  sm:px-10 md:px-20 lg:px-40;
-        /* @apply flex justify-center items-center flex-wrap mx-auto w-[600px]; */
-
+        @apply w-full mx-auto px-4 sm:px-10 md:px-20 lg:px-40;
       }
-      
     }
   </style>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-white text-gray-800 container">
-    <header class="flex item-center justify-between px-5 md:px-12 border-b">
-        <a class="text-xl font-bold text-purple-700"><img src="../Virginie-E-Commerce/assets/logo.png" alt=""></a>
-        <nav class="hidden md:flex gap-7 text-sm">
 
-        </nav>
-        <div class="flex items-center gap-3">
-            <input placeholder="Search products..." class="hidden sm:block bg-gray-100 rounded-full px-4 py-2 text-sm w-36 lg:w-52">
-            <button><img src="../Virginie-E-Commerce/assets/Frame 28.png" alt=""><span class="hidden sm:inline">Cart</span></button>
-            <button class="border border-purple-600 rounded-full px-4 py-2 text-sm"><img src="../Virginie-E-Commerce/assets/people.png" alt=""> login</button>
-        </div>
-    </header>
+<header class="flex flex-wrap items-center gap-3 py-4 md:flex-nowrap md:gap-6">
 
-    
+  <button class="text-xl md:hidden" aria-label="Menu">☰</button>
+
+  <div class="flex flex-1 items-center md:flex-none md:shrink-0 md:gap-4">
+    <img src="../assets/logo.png" alt="EasyMart" class="hidden h-7 md:block">
+
+    <div class="flex flex-1 items-center gap-1 md:flex-none">
+      <img src="../assets/Location.png" alt="" class="hidden h-5 md:block">
+      <img src="../assets/Location2.png" alt="" class="ml-8 h-5 items-center md:hidden md:ml-0">
+      <span class="text-xs text-[#B6349A] md:text-[#3E3B3F]">10015 New York</span>
+      <img src="../assets/arrow-down.png" alt="" class="md:hidden">
+    </div>
+  </div>
+
+  <label class="order-last flex w-full min-w-0 flex-row-reverse items-center gap-2 rounded-full border border-[#F8F7F8] bg-white px-4 py-2
+                md:order-none md:w-auto md:flex-1 md:flex-row md:shadow-md">
+    <img src="../assets/search.png" alt="" class="shrink-0">
+    <input type="search" placeholder="Search by" aria-label="Search"
+           class="w-full min-w-0 bg-transparent text-sm outline-none">
+  </label>
+
+  <a href="#" class="flex shrink-0 items-center gap-2 rounded-full bg-[#B6349A] p-2 text-white
+                     md:justify-center md:border md:border-[#F3D5EE] md:bg-[#FEF5FD] md:px-5 md:text-[#3E3B3F]">
+    <img src="../assets/buy.png" alt="" class="px-2 max-md:brightness-0 max-md:invert md:hidden">
+    <img src="../assets/Frame 28.png" alt="" class="hidden md:block">
+    <span class="hidden md:inline">Cart</span>
+  </a>
+
+  <a href="login/Email01.html" class="hidden shrink-0 items-center gap-2 rounded-full border border-[#B6349A] px-8 py-2 text-[#B6349A] md:flex">
+    <img src="../assets/people.png" alt="" class="h-5"> Login
+  </a>
+
+</header>
+
+<section aria-label="Featured" class="mt-4">
+
+  <!-- Desktop: two rows with different tile widths, scrolling sideways together -->
+  <div class="hidden overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:block">
+    <div class="flex w-max flex-col gap-2 lg:gap-3">
+      <div class="flex gap-2 lg:gap-3"><div class="h-32 shrink-0 overflow-hidden rounded-2xl lg:rounded-3xl bg-[#F7F7F7] lg:h-48 aspect-[1.71/1]"><img src="../assets/Frame 33.png" alt="Slide 1" class="h-full w-full object-contain"></div><div class="h-32 shrink-0 overflow-hidden rounded-2xl lg:rounded-3xl bg-[#F7F7F7] lg:h-48 aspect-[2.29/1]"><img src="../assets/Frame 33.png" alt="Slide 2" class="h-full w-full object-contain"></div><div class="h-32 shrink-0 overflow-hidden rounded-2xl lg:rounded-3xl bg-[#F7F7F7] lg:h-48 aspect-[1.75/1]"><img src="../assets/Frame 33.png" alt="Slide 3" class="h-full w-full object-contain"></div></div>
+      <div class="flex gap-2 lg:gap-3"><div class="h-32 shrink-0 overflow-hidden rounded-2xl lg:rounded-3xl bg-[#F7F7F7] lg:h-48 aspect-[1.12/1]"><img src="../assets/Frame 33.png" alt="Slide 4" class="h-full w-full object-contain"></div><div class="h-32 shrink-0 overflow-hidden rounded-2xl lg:rounded-3xl bg-[#F7F7F7] lg:h-48 aspect-[3.45/1]"><img src="../assets/Frame 33.png" alt="Slide 5" class="h-full w-full object-contain"></div><div class="h-32 shrink-0 overflow-hidden rounded-2xl lg:rounded-3xl bg-[#F7F7F7] lg:h-48 aspect-[1.75/1]"><img src="../assets/Frame 33.png" alt="Slide 6" class="h-full w-full object-contain"></div></div>
+    </div>
+  </div>
+
+  <!-- (Alpine.js) -->
+  <div class="md:hidden"
+       x-data="{ i: 0, n: 3, go(k) { $refs.track.scrollTo({ left: k * $refs.track.clientWidth, behavior: 'smooth' }) } }">
+    <div x-ref="track"
+         @scroll.passive="i = Math.round($refs.track.scrollLeft / $refs.track.clientWidth)"
+         class="flex snap-x snap-mandatory gap-3 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div class="aspect-[1.7/1] w-full shrink-0 snap-center overflow-hidden rounded-2xl bg-[#F7F7F7]">
+        <img src="../assets/Frame 33.png" alt="Slide 1" class="h-full w-full object-contain">
+      </div>
+      <div class="aspect-[1.7/1] w-full shrink-0 snap-center overflow-hidden rounded-2xl bg-[#F7F7F7]">
+        <img src="../assets/Frame 33.png" alt="Slide 2" class="h-full w-full object-contain">
+      </div>
+      <div class="aspect-[1.7/1] w-full shrink-0 snap-center overflow-hidden rounded-2xl bg-[#F7F7F7]">
+        <img src="../assets/Frame 33.png" alt="Slide 3" class="h-full w-full object-contain">
+      </div>
+    </div>
+
+    <div class="mt-3 flex justify-center gap-1.5">
+      <template x-for="k in n" :key="k">
+        <button type="button" :aria-label="'Go to slide ' + k" @click="go(k - 1)"
+                :data-active="i === k - 1 ? 'true' : 'false'"
+                class="h-1.5 w-1.5 rounded-full bg-gray-300 transition-all
+                       data-[active=true]:w-5 data-[active=true]:bg-[#B6349A]"></button>
+      </template>
+    </div>
+  </div>
+</section>
+
+<!-- Categories: sits directly under the header.
+     Mobile = wrapping grid, desktop = single scrollable row -->
+<section aria-label="Categories"
+         class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4
+                md:flex md:gap-4 md:overflow-x-auto md:overflow-x-hidden md:pb-2">
+  <div class="md:shrink-0"><img src="../assets/bread.png" alt="bread" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8 md:rounded-3xl md:item-center"><span>Bread</span></div>
+  <div class="md:shrink-0"><img src="../assets/cheese.png" alt="cheese" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Cheese</span></div>
+  <div class="md:shrink-0"><img src="../assets/alcohol.png" alt="alcohol" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Alcohol</span></div>
+  <div class="md:shrink-0"><img src="../assets/yogourt.png" alt="yogurt" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Yogurt</span></div>
+  <div class="md:shrink-0"><img src="../assets/Fruits.png" alt="Fruits" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Fruits</span></div>
+  <div class="md:shrink-0"><img src="../assets/watermelon.png" alt="watermelon" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Watermelon</span></div>
+  <div class="md:shrink-0"><img src="../assets/snacks.png" alt="snacks" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Snacks</span></div>
+  <div class="md:shrink-0"><img src="../assets/cake.png" alt="cake" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Cake</span></div>
+  <div class="md:shrink-0"><img src="../assets/candy.png" alt="candy" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Candy</span></div>
+  <div class="md:shrink-0"><img src="../assets/vegetable.png" alt="vegetable" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Vegetables</span></div>
+  <div class="md:shrink-0"><img src="../assets/fruits.png" alt="Fruits" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Fruits</span></div>
+  <div class="md:shrink-0"><img src="../assets/fruits.png" alt="Fruits" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Fruits</span></div>
+    <div class="md:shrink-0"><img src="../assets/fruits.png" alt="Fruits" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Fruits</span></div>
+      <div class="md:shrink-0"><img src="../assets/fruits.png" alt="Fruits" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8"><span>Fruits</span></div>
+        <div class="md:shrink-0"><img src="../assets/fruits.png" alt="Fruits" class="h-auto w-full md:h-[50px] md:w-auto md:border border-gray-300 px-8 text-xs items-center"><span>Fruits</span></div>
+</section>
+
 </body>
 </html>
