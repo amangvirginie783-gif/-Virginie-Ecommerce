@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .container {
+        @apply w-full mx-auto px-4 sm:px-10 md:px-20 lg:px-40;
+      }
+    }
+  </style>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white text-gray-800 container">
+<header class="hidden sm:flex flex-wrap items-center gap-3 py-4 md:flex-nowrap md:gap-6">
+  <button class="text-xl md:hidden" aria-label="Menu">☰</button>
+
+  <div class="flex flex-1 items-center md:flex-none md:shrink-0 md:gap-4">
+    <img src="../assets/logo.png" alt="EasyMart" class="hidden h-7 md:block">
+
+    <div class="flex flex-1 items-center gap-1 md:flex-none">
+      <img src="../assets/Location.png" alt="" class="hidden h-5 md:block">
+      <img src="../assets/Location2.png" alt="" class="ml-8 h-5 items-center md:hidden md:ml-0">
+      <span class="text-xs text-[#B6349A] md:text-[#3E3B3F]">10015 New York</span>
+      <img src="../assets/arrow-down.png" alt="" class="md:hidden">
+    </div>
+  </div>
+
+  <label class="order-last flex w-full min-w-0 flex-row-reverse items-center gap-2 rounded-full border border-[#F8F7F8] bg-white px-4 py-2
+                md:order-none md:w-auto md:flex-1 md:flex-row md:shadow-md">
+    <img src="../assets/search.png" alt="" class="shrink-0">
+    <input type="search" placeholder="Search by" aria-label="Search"
+           class="w-full min-w-0 bg-transparent text-sm outline-none">
+  </label>
+
+  <a href="#" class="flex shrink-0 items-center gap-2 rounded-full bg-[#B6349A] p-2 text-white
+                     md:justify-center md:border md:border-[#F3D5EE] md:bg-[#FEF5FD] md:px-5 md:text-[#3E3B3F]">
+    <img src="../assets/buy.png" alt="" class="px-2 max-md:brightness-0 max-md:invert md:hidden">
+    <img src="../assets/Frame 28.png" alt="" class="hidden md:block">
+    <span class="hidden md:inline">Cart</span>
+  </a>
+
+  <a href="login/Email01.html" class="hidden shrink-0 items-center gap-2 rounded-full border border-[#B6349A] px-8 py-2 text-[#B6349A] md:flex">
+    <img src="../assets/people.png" alt="" class="h-5"> Login
+  </a>
+
+</header>
+<body>
+    
+<main class="grid gap-6 pb-28 sm:grid-cols-[200px_1fr] sm:gap-8 sm:pb-10 md:grid-cols-[220px_1fr] md:gap-10">
+ 
+ <aside class="hidden sm:flex flex-col justify-between self-start sm:min-h-[560px]">
+    <nav class="rounded-2xl bg-[#FDFAFD] p-4" aria-label="Account">
+      <div class="mb-4 flex items-center gap-3 px-2">
+        <img src="../assets/profile.png" alt="" class="h-8 w-8 rounded-full object-cover">
+        <span class="text-xs font-medium">Amang Virginie</span>
+      </div>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] hover:text-[#B6349A]">
+        <img src="../assets/user.png" alt="" class="h-4 w-4"> Account Details
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] hover:text-[#B6349A]">
+        <img src="../assets/shopping-cart.png" alt="" class="h-4 w-4"> My Cart
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] hover:text-[#B6349A]">
+        <img src="../assets/location3.png" alt="" class="h-4 w-4"> My Addresses
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#B6349A] hover:text-[#B6349A]">
+        <img src="../assets/card.png" alt="" class="h-4 w-4"> My Payments
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] hover:text-[#B6349A]">
+        <img src="../assets/notification-bing.png" alt="" class="h-4 w-4"> Notification Setting
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] hover:text-[#B6349A]">
+        <img src="../assets/gift.png" alt="" class="h-4 w-4"> Refer Friends
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] hover:text-[#B6349A]">
+        <img src="../assets/discount-shape.png" alt="" class="h-4 w-4"> Coupons
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] hover:text-[#B6349A]">
+        <img src="../assets/receipt-discount.png" alt="" class="h-4 w-4"> My Recipes
+      </a>
+      <hr class="my-3 border-[#F3EEF3]">
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] hover:text-[#B6349A]">
+        <img src="../assets/setting-2.png" alt="" class="h-4 w-4"> Account Settings
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-2 py-2 text-xs text-[#8C888D] font-medium">
+        <img src="../assets/info-circle.png" alt="" class="h-4 w-4"> Help Center
+      </a>
+    </nav>
+    <a href="#" class="mt-24 flex items-center gap-3 rounded-2xl bg-[#FDFAFD] px-6 py-4 text-xs">
+      <img src="../assets/logout.png" alt="" class="h-4 w-4"> Logout
+    </a>
+  </aside>
+
+  <section>
+  
+  <div class="flex items-center gap-4 py-4 sm:hidden">
+    <a href="#" aria-label="Close"><img src="../assets/add.png" alt="" class="h-4 w-4"></a>
+    <h1 class="text-sm font-medium">My Payments</h1>
+  </div>
+
+    <h1 class="mb-4 hidden text-sm font-semibold sm:block">My Payments</h1>
+    <ul class="space-y-3">
+      <li class="flex items-center gap-3 rounded-xl border border-[#F3EEF3] bg-[#FDFAFD] px-4 py-3">
+        <img src="../assets/2.png" alt="" class="h-4 w-5 shrink-0">
+        <div class="min-w-0 flex-1">
+          <p class="text-xs font-medium">MasterCard 6568</p>
+          <p class="text-[10px] text-[#8C888D]">Exp 12/2024</p>
+        </div>
+        <button type="button" aria-label="Delete payment method" class="shrink-0 p-1">
+          <img src="../assets/Trash.png" alt="" class="h-4 w-4">
+        </button>
+      </li>
+      <li class="flex items-center gap-3 rounded-xl border border-[#F3EEF3] bg-[#FDFAFD] px-4 py-3">
+        <img src="../assets/2.png" alt="" class="h-4 w-5 shrink-0">
+        <div class="min-w-0 flex-1">
+          <p class="text-xs font-medium">MasterCard 6568</p>
+          <p class="text-[10px] text-[#8C888D]">Exp 12/2024</p>
+        </div>
+        <button type="button" aria-label="Delete payment method" class="shrink-0 p-1">
+          <img src="../assets/Trash.png" alt="" class="h-4 w-4">
+        </button>
+      </li>
+      <li class="flex items-center gap-3 rounded-xl border border-[#F3EEF3] bg-[#FDFAFD] px-4 py-3">
+        <img src="../assets/paypal.png" alt="" class="h-4 w-5 shrink-0">
+        <div class="min-w-0 flex-1">
+          <p class="text-xs font-medium">PayPal</p>
+          <p class="text-[10px] text-[#8C888D]">Exp 12/2024</p>
+        </div>
+        <button type="button" aria-label="Delete payment method" class="shrink-0 p-1">
+          <img src="../assets/Trash.png" alt="" class="h-4 w-4">
+        </button>
+      </li>
+    </ul>
+    
+    <a href="#" class="mt-4 hidden items-center gap-2 text-xs text-[#B6349A] sm:inline-flex">
+      <img src="../assets/add2.png" alt="" class="h-4 w-4">Add Payment Method
+    </a>
+ 
+    <div class="fixed inset-x-0 bottom-0 bg-white px-4 pb-6 pt-3 sm:hidden">
+      <a href="#" class="flex w-full items-center justify-center gap-2 rounded-full bg-[#B6349A] py-3 text-xs font-medium text-white">
+        <img src="../assets/add3.png" alt="" class="h-4 w-4"> Add Payment Method
+      </a>
+    </div>
+  </section>
+</main>
+   
+</body>
+</html>

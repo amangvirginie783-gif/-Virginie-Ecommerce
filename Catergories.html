@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .container {
+        @apply w-full mx-auto px-4 sm:px-10 md:px-20 lg:px-40;
+      }
+    }
+  </style>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white text-gray-800 container">
+<header class="hidden sm:flex flex-wrap items-center gap-3 py-4 md:flex-nowrap md:gap-6">
+  <button class="text-xl md:hidden" aria-label="Menu">☰</button>
+
+  <div class="flex flex-1 items-center md:flex-none md:shrink-0 md:gap-4">
+    <img src="../assets/logo.png" alt="EasyMart" class="hidden h-7 md:block">
+
+    <div class="flex flex-1 items-center gap-1 md:flex-none">
+      <img src="../assets/Location.png" alt="" class="hidden h-5 md:block">
+      <img src="../assets/Location2.png" alt="" class="ml-8 h-5 items-center md:hidden md:ml-0">
+      <span class="text-xs text-[#B6349A] md:text-[#3E3B3F]">10015 New York</span>
+      <img src="../assets/arrow-down.png" alt="" class="md:hidden">
+    </div>
+  </div>
+
+  <label class="order-last flex w-full min-w-0 flex-row-reverse items-center gap-2 rounded-full border border-[#F8F7F8] bg-white px-4 py-2
+                md:order-none md:w-auto md:flex-1 md:flex-row md:shadow-md">
+    <img src="../assets/search.png" alt="" class="shrink-0">
+    <input type="search" placeholder="Search by" aria-label="Search"
+           class="w-full min-w-0 bg-transparent text-sm outline-none">
+  </label>
+
+  <a href="#" class="flex shrink-0 items-center gap-2 rounded-full bg-[#B6349A] p-2 text-white
+                     md:justify-center md:border md:border-[#F3D5EE] md:bg-[#FEF5FD] md:px-5 md:text-[#3E3B3F]">
+    <img src="../assets/buy.png" alt="" class="px-2 max-md:brightness-0 max-md:invert md:hidden">
+    <img src="../assets/Frame 28.png" alt="" class="hidden md:block">
+    <span class="hidden md:inline">Cart</span>
+  </a>
+
+  <a href="login/Email01.html" class="hidden shrink-0 items-center gap-2 rounded-full border border-[#B6349A] px-8 py-2 text-[#B6349A] md:flex">
+    <img src="../assets/people.png" alt="" class="h-5"> Login
+  </a>
+
+</header>
+<body>
+    
+</body>
+</html>

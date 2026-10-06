@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .container {
+        @apply w-full mx-auto px-4 sm:px-10 md:px-20 lg:px-40;
+      }
+    }
+  </style>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white text-gray-800 container">
+<header class="hidden sm:flex flex-wrap items-center gap-3 py-4 md:flex-nowrap md:gap-6">
+  <button class="text-xl md:hidden" aria-label="Menu">☰</button>
+
+  <div class="flex flex-1 items-center md:flex-none md:shrink-0 md:gap-4">
+    <img src="../assets/logo.png" alt="EasyMart" class="hidden h-7 md:block">
+
+    <div class="flex flex-1 items-center gap-1 md:flex-none">
+      <img src="../assets/Location.png" alt="" class="hidden h-5 md:block">
+      <img src="../assets/Location2.png" alt="" class="ml-8 h-5 items-center md:hidden md:ml-0">
+      <span class="text-xs text-[#B6349A] md:text-[#3E3B3F]">10015 New York</span>
+      <img src="../assets/arrow-down.png" alt="" class="md:hidden">
+    </div>
+  </div>
+
+  <label class="order-last flex w-full min-w-0 flex-row-reverse items-center gap-2 rounded-full border border-[#F8F7F8] bg-white px-4 py-2
+                md:order-none md:w-auto md:flex-1 md:flex-row md:shadow-md">
+    <img src="../assets/search.png" alt="" class="shrink-0">
+    <input type="search" placeholder="Search by" aria-label="Search"
+           class="w-full min-w-0 bg-transparent text-sm outline-none">
+  </label>
+
+  <a href="#" class="flex shrink-0 items-center gap-2 rounded-full bg-[#B6349A] p-2 text-white
+                     md:justify-center md:border md:border-[#F3D5EE] md:bg-[#FEF5FD] md:px-5 md:text-[#3E3B3F]">
+    <img src="../assets/buy.png" alt="" class="px-2 max-md:brightness-0 max-md:invert md:hidden">
+    <img src="../assets/Frame 28.png" alt="" class="hidden md:block">
+    <span class="hidden md:inline">Cart</span>
+  </a>
+
+  <a href="login/Email01.html" class="hidden shrink-0 items-center gap-2 rounded-full border border-[#B6349A] px-8 py-2 text-[#B6349A] md:flex">
+    <img src="../assets/people.png" alt="" class="h-5"> Login
+  </a>
+
+</header>
+<body>
+
+<main class="pb-28 lg:pb-0">
+  <div class="flex items-center gap-4 py-4 sm:hidden">
+    <a href="#" aria-label="Back"><img src="../assets/add.png" alt="" class="h-4 w-4"></a>
+    <h1 class="text-sm font-medium">My cart</h1>
+  </div>
+  <img src="../assets/shopping.png" alt="" class="h-4 w-4">
+  <h1 class="mb-5 hidden text-lg font-semibold sm:block">Local Market</h1>
+  <div class="grid gap-6 lg:grid-cols-[1fr_340px] lg:gap-10">
+    <section><p class="mb-3 text-[11px] text-[#8C888D]">4 items</p>
+      <ul class="space-y-3">
+        <li class="flex items-center gap-3 rounded-2xl border border-[#F3EEF3] p-3">
+          <img src="../assets/orange.png" alt="orange" class="h-16 w-16 shrink-0 rounded-xl bg-[#FDFAFD] object-contain">
+          <div class="min-w-0 flex-1"><p class="truncate text-xs font-semibold">Sweet Green Seedless Grapes 1.5-2 Ib</p>
+            <div class="mt-2">
+                            <span class="text-[13px] font-medium font-semibold text-[#B6349A]">
+                                $99.00
+                            </span>
+
+                            <span class="ml-1 text-[9px] text-gray-400 line-through">
+                                $99.99
+                            </span>
+
+                        </div>
+            <div class="mt-2 inline-flex items-center gap-3 rounded-full bg-[#B6349A] px-2 py-1 text-white"><button type="button" aria-label="Decrease"><img src="../assets/icons/minus-white.png" alt="" class="h-3 w-3"></button><span class="text-xs">1</span><button type="button" aria-label="Increase"><img src="../assets/icons/plus-white.png" alt="" class="h-3 w-3"></button></div></div>
+          <div class="flex flex-col items-end gap-3"><button type="button" aria-label="Remove"><img src="../assets/Trash.png" alt="" class="h-4 w-4"></button><span class="text-xs font-semibold">$18.00</span></div>
+        </li>
+      </ul>
+    </section>
+    <aside class="space-y-4 lg:sticky lg:top-4 lg:self-start">
+      <div class="flex gap-2"><input type="text" placeholder="Promo code" class="min-w-0 flex-1 rounded-full border border-[#F3EEF3] px-4 py-2 text-xs outline-none"><button type="button" class="rounded-full bg-[#FEF5FD] px-5 text-xs text-[#B6349A]">Apply</button></div>
+      <div class="rounded-2xl border border-[#F3EEF3] bg-[#FDFAFD] p-4 "><h2 class="mb-3 text-xs font-semibold">Order Summary</h2><div class="space-y-2"><div class="flex justify-between text-xs"><span class="text-[#8C888D]">Subtotal</span><span>$54.00</span></div><div class="flex justify-between text-xs"><span class="text-[#8C888D]">Delivery fee</span><span>$2.00</span></div><div class="flex justify-between text-xs"><span class="text-[#8C888D]">Discount</span><span>-$4.00</span></div></div><div class="mt-3 flex justify-between border-t border-[#F3EEF3] pt-3 text-sm font-semibold"><span>Total</span><span>$52.00</span></div></div>
+      <a href="#" class="hidden lg:flex w-full items-center justify-center rounded-full bg-[#B6349A] py-3 text-xs font-medium text-white">Checkout</a>
+    </aside>
+  </div>
+  <section class="mt-10"><h2 class="mb-4 text-sm font-semibold">You might also like</h2>
+    <ul class="grid grid-cols-2 gap-3 md:grid-cols-4">
+      <li class="rounded-2xl border border-[#F3EEF3] p-3">
+        <img src="../assets/orange.png" alt="" class="mx-auto h-24 w-full object-contain">
+        <p class="text-xs font-semibold">This is product a</p><p class="text-[10px] text-[#8C888D] mt-5">$2.71/Ib</p>
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold">$2.71/Ib</span><button type="button" aria-label="Add to cart" class="rounded-full bg-[#B6349A] p-2"><img src="../assets/icons/plus-white.png" alt="" class="h-3 w-3"></button></div>
+      </li>
+    </ul></section>
+</main>
+  <div class="fixed inset-x-0 bottom-0 bg-white px-4 pb-6 pt-3 lg:hidden"><a href="#" class="flex w-full items-center justify-center rounded-full bg-[#B6349A] py-3 text-xs font-medium text-white">Checkout</a></div>
+
+<footer class="mt-12 border-t border-[#F3EEF3] py-8">
+  <div class="grid grid-cols-2 gap-8 md:grid-cols-[1.5fr_repeat(4,1fr)]">
+    <div class="col-span-2 md:col-span-1">
+      <img src="../assets/logo.png" alt="EasyMart" class="h-7">
+      <div class="mt-4 flex gap-3">
+        <a href="#"><img src="../assets/icons/social1.png" alt="" class="h-5 w-5"></a>
+        <a href="#"><img src="../assets/icons/social2.png" alt="" class="h-5 w-5"></a>
+        <a href="#"><img src="../assets/icons/social3.png" alt="" class="h-5 w-5"></a>
+      </div>
+    </div>
+      <div><h3 class="mb-3 text-xs font-semibold">Company</h3>
+        <ul class="space-y-2 text-[11px] text-[#8C888D]"><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></div>
+      <div><h3 class="mb-3 text-xs font-semibold">Support</h3>
+        <ul class="space-y-2 text-[11px] text-[#8C888D]"><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></div>
+      <div><h3 class="mb-3 text-xs font-semibold">Legal</h3>
+        <ul class="space-y-2 text-[11px] text-[#8C888D]"><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></div>
+      <div><h3 class="mb-3 text-xs font-semibold">Get the app</h3>
+        <ul class="space-y-2 text-[11px] text-[#8C888D]"><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></div>
+  </div>
+  <p class="mt-8 text-center text-[11px] text-[#8C888D]">© 2026 EasyMart. All rights reserved.</p>
+</footer> 
+</body>
+</html>

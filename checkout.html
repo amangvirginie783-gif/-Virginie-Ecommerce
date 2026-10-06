@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <style type="text/tailwindcss">
+        @layer components {
+      .container {
+        @apply w-full mx-auto px-4  sm:px-10 md:px-20 lg:px-40;
+        /* @apply flex justify-center items-center flex-wrap mx-auto w-[600px]; */
+
+      }
+      
+    }
+  </style>
+</head>
+
+<body class="text-black text-[7px]container ">
+
+<header class="border-b  border-b-[#F0EEF0] flex py-5 px-2 md:py-8 justify-center ">
+        <img src="../assets/logo.png" alt="" class="h-6 md:h-7 w-auto">
+    </header>
+    <body>
+      <!-- Paste right after </header> -->
+<main class="pb-28 lg:pb-0">
+  <div class="flex items-center gap-4 py-4 sm:hidden">
+    <a href="#" aria-label="Back"><img src="../assets/icons/close.png" alt="" class="h-4 w-4"></a>
+    <h1 class="text-sm font-medium">Checkout</h1>
+  </div>
+  <h1 class="mb-5 hidden text-lg font-semibold sm:block">Checkout</h1>
+  <div class="grid gap-6 lg:grid-cols-[1fr_340px] lg:gap-10">
+    <div class="space-y-8">
+    <section><div class="mb-3 flex items-center justify-between"><h2 class="text-sm font-semibold">Delivery address</h2><a href="#" class="text-xs text-[#B6349A]">Add address</a></div>
+      <div class="space-y-2"><label class="flex cursor-pointer items-center gap-3 rounded-xl border border-[#F3EEF3] bg-white px-4 py-3"><input type="radio" name="addr" class="h-4 w-4 shrink-0 accent-[#B6349A]"><span class="min-w-0 flex-1"><span class="block text-xs font-medium">Home</span><span class="block truncate text-[10px] text-[#8C888D]">2972 Westheimer Rd. Santa Ana, Illinois 85486</span></span></label><label class="flex cursor-pointer items-center gap-3 rounded-xl border border-[#F3EEF3] bg-white px-4 py-3"><input type="radio" name="addr" class="h-4 w-4 shrink-0 accent-[#B6349A]"><span class="min-w-0 flex-1"><span class="block text-xs font-medium">Office</span><span class="block truncate text-[10px] text-[#8C888D]">2972 Westheimer Rd. Santa Ana, Illinois 85486</span></span></label></div></section>
+    <section><div class="mb-3 flex items-center justify-between"><h2 class="text-sm font-semibold">Delivery time</h2><a href="#" class="text-xs text-[#B6349A]"></a></div>
+      <div class="mb-3 flex gap-2 overflow-x-auto"><button type="button" class="shrink-0 rounded-xl border border-[#F3EEF3] px-4 py-2 text-xs hover:border-[#B6349A]">Mon<br>05</button><button type="button" class="shrink-0 rounded-xl border border-[#F3EEF3] px-4 py-2 text-xs hover:border-[#B6349A]">Mon<br>05</button><button type="button" class="shrink-0 rounded-xl border border-[#F3EEF3] px-4 py-2 text-xs hover:border-[#B6349A]">Mon<br>05</button><button type="button" class="shrink-0 rounded-xl border border-[#F3EEF3] px-4 py-2 text-xs hover:border-[#B6349A]">Mon<br>05</button><button type="button" class="shrink-0 rounded-xl border border-[#F3EEF3] px-4 py-2 text-xs hover:border-[#B6349A]">Mon<br>05</button></div><div class="grid grid-cols-2 gap-2 sm:grid-cols-3"><button type="button" class="rounded-full border border-[#F3EEF3] py-2 text-[11px] hover:border-[#B6349A] hover:text-[#B6349A]">9:00 – 10:00</button><button type="button" class="rounded-full border border-[#F3EEF3] py-2 text-[11px] hover:border-[#B6349A] hover:text-[#B6349A]">9:00 – 10:00</button><button type="button" class="rounded-full border border-[#F3EEF3] py-2 text-[11px] hover:border-[#B6349A] hover:text-[#B6349A]">9:00 – 10:00</button><button type="button" class="rounded-full border border-[#F3EEF3] py-2 text-[11px] hover:border-[#B6349A] hover:text-[#B6349A]">9:00 – 10:00</button><button type="button" class="rounded-full border border-[#F3EEF3] py-2 text-[11px] hover:border-[#B6349A] hover:text-[#B6349A]">9:00 – 10:00</button><button type="button" class="rounded-full border border-[#F3EEF3] py-2 text-[11px] hover:border-[#B6349A] hover:text-[#B6349A]">9:00 – 10:00</button></div></section>
+    <section><div class="mb-3 flex items-center justify-between"><h2 class="text-sm font-semibold">Payment method</h2><a href="#" class="text-xs text-[#B6349A]">Add new</a></div>
+      <div class="space-y-2"><label class="flex cursor-pointer items-center gap-3 rounded-xl border border-[#F3EEF3] bg-white px-4 py-3"><input type="radio" name="pay" class="h-4 w-4 shrink-0 accent-[#B6349A]"><img src="../assets/icons/mastercard.png" alt="" class="h-5 w-6 shrink-0"><span class="min-w-0 flex-1"><span class="block text-xs font-medium">MasterCard 6568</span><span class="block truncate text-[10px] text-[#8C888D]">Exp 12/2024</span></span></label><label class="flex cursor-pointer items-center gap-3 rounded-xl border border-[#F3EEF3] bg-white px-4 py-3"><input type="radio" name="pay" class="h-4 w-4 shrink-0 accent-[#B6349A]"><img src="../assets/icons/paypal.png" alt="" class="h-5 w-6 shrink-0"><span class="min-w-0 flex-1"><span class="block text-xs font-medium">PayPal</span><span class="block truncate text-[10px] text-[#8C888D]">Exp 12/2024</span></span></label><label class="flex cursor-pointer items-center gap-3 rounded-xl border border-[#F3EEF3] bg-white px-4 py-3"><input type="radio" name="pay" class="h-4 w-4 shrink-0 accent-[#B6349A]"><span class="min-w-0 flex-1"><span class="block text-xs font-medium">Cash on delivery</span><span class="block truncate text-[10px] text-[#8C888D]">Pay when you receive</span></span></label></div></section>
+    <section><div class="mb-3 flex items-center justify-between"><h2 class="text-sm font-semibold">Order items</h2><a href="#" class="text-xs text-[#B6349A]">Edit</a></div>
+      <div class="flex items-center gap-2 overflow-x-auto rounded-xl bg-[#FDFAFD] p-3"><img src="../assets/product.png" alt="" class="h-8 w-8 shrink-0 object-contain"><img src="../assets/product.png" alt="" class="h-8 w-8 shrink-0 object-contain"><img src="../assets/product.png" alt="" class="h-8 w-8 shrink-0 object-contain"><img src="../assets/product.png" alt="" class="h-8 w-8 shrink-0 object-contain"><img src="../assets/product.png" alt="" class="h-8 w-8 shrink-0 object-contain"><img src="../assets/product.png" alt="" class="h-8 w-8 shrink-0 object-contain"></div></section>
+    </div>
+    <aside class="space-y-4 lg:sticky lg:top-4 lg:self-start">
+      <div class="flex gap-2"><input type="text" placeholder="Promo code" class="min-w-0 flex-1 rounded-full border border-[#F3EEF3] px-4 py-2 text-xs outline-none"><button type="button" class="rounded-full bg-[#FEF5FD] px-5 text-xs text-[#B6349A]">Apply</button></div>
+      <div class="rounded-2xl border border-[#F3EEF3] bg-[#FDFAFD] p-4 "><h2 class="mb-3 text-xs font-semibold">Order Summary</h2><div class="space-y-2"><div class="flex justify-between text-xs"><span class="text-[#8C888D]">Subtotal</span><span>$54.00</span></div><div class="flex justify-between text-xs"><span class="text-[#8C888D]">Delivery fee</span><span>$2.00</span></div><div class="flex justify-between text-xs"><span class="text-[#8C888D]">Discount</span><span>-$4.00</span></div></div><div class="mt-3 flex justify-between border-t border-[#F3EEF3] pt-3 text-sm font-semibold"><span>Total</span><span>$52.00</span></div></div>
+      <a href="#" class="hidden lg:flex w-full items-center justify-center rounded-full bg-[#B6349A] py-3 text-xs font-medium text-white">Place Order</a>
+    </aside>
+  </div>
+</main>
+  <div class="fixed inset-x-0 bottom-0 bg-white px-4 pb-6 pt-3 lg:hidden"><a href="#" class="flex w-full items-center justify-center rounded-full bg-[#B6349A] py-3 text-xs font-medium text-white">Place Order</a></div>
+<!-- Footer -->
+<footer class="mt-12 border-t border-[#F3EEF3] py-8">
+  <div class="grid grid-cols-2 gap-8 md:grid-cols-[1.5fr_repeat(4,1fr)]">
+    <div class="col-span-2 md:col-span-1">
+      <img src="../assets/logo.png" alt="EasyMart" class="h-7">
+      <div class="mt-4 flex gap-3">
+        <a href="#"><img src="../assets/icons/social1.png" alt="" class="h-5 w-5"></a>
+        <a href="#"><img src="../assets/icons/social2.png" alt="" class="h-5 w-5"></a>
+        <a href="#"><img src="../assets/icons/social3.png" alt="" class="h-5 w-5"></a>
+      </div>
+    </div>
+      <div><h3 class="mb-3 text-xs font-semibold">Company</h3>
+        <ul class="space-y-2 text-[11px] text-[#8C888D]"><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></div>
+      <div><h3 class="mb-3 text-xs font-semibold">Support</h3>
+        <ul class="space-y-2 text-[11px] text-[#8C888D]"><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></div>
+      <div><h3 class="mb-3 text-xs font-semibold">Legal</h3>
+        <ul class="space-y-2 text-[11px] text-[#8C888D]"><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></div>
+      <div><h3 class="mb-3 text-xs font-semibold">Get the app</h3>
+        <ul class="space-y-2 text-[11px] text-[#8C888D]"><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></div>
+  </div>
+  <p class="mt-8 text-center text-[11px] text-[#8C888D]">© 2026 EasyMart. All rights reserved.</p>
+</footer>  
+    </body>
+    </html>
